@@ -54,7 +54,7 @@ logs/
 runs/
 lightning_logs/
 uploads/
-data/
+
 *.ckpt
 *.pt
 *.pth
@@ -72,3 +72,6 @@ data/
 # Ignore system files
 .DS_Store
 Thumbs.db
+*.jpg
+*.jpeg
+*.png
