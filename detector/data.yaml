@@ -1,0 +1,15 @@
+# Ultralytics YOLOv8n custom dataset configuration
+
+# Path to the dataset root directory
+path: ../data/plantnet_300K/images_test  # This path is relative to the `detector` folder
+
+# Train and validation image directories
+# These paths are relative to the 'path' specified above
+train: images  # Path to training images
+val: images      # Path to validation images
+
+# Number of classes
+nc: 1 # Or whatever your number of classes is
+
+# Class names
+names: ['sample_annotations'] # Or whatever your class name is

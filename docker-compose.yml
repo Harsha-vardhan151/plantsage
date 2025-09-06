@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  api:
+    build: ./server
+    image: plantsage-api:latest
+    environment:
+      - TORCH_DEVICE=cpu
+      - CLASSIFIER_WEIGHTS=/app/models/classifier_last.ckpt
+      - ONNX_WEIGHTS=/app/models/classifier.onnx
+      - DETECTOR_WEIGHTS=yolov8n.pt # auto-download by ultralytics
+      - CALIBRATION_FILE=/app/calibration.json
+    volumes:
+      - ./server/models:/app/models
+      - ./server/tips.json:/app/tips.json:ro
+      - ./server/calibration.json:/app/calibration.json:ro
+    ports:
+      - "8000:8000"
+
+  web:
+    build: ./gateway
+    image: plantsage-web:latest
+    environment:
+      - FASTAPI_URL=http://api:8000
+      - STATIC_DIR=/app/static
+    volumes:
+      - ./client/dist:/app/static:ro
+    ports:
+      - "8080:8080"
+    depends_on:
+      - api

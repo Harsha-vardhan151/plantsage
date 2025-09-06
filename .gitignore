@@ -1,0 +1,74 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python packaging
+dist/
+build/
+
+# =========================
+# Node.js / React
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build output
+client/dist/
+client/build/
+gateway/dist/
+gateway/build/
+
+# =========================
+# Logs and caches
+# =========================
+*.log
+logs/
+*.out
+*.pid
+*.seed
+*.pid.lock
+
+# VSCode
+.vscode/
+
+# =========================
+# Data & ML training
+# =========================
+runs/
+lightning_logs/
+uploads/
+data/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.h5
+
+# =========================
+# Docker / Compose
+# =========================
+*.pid
+*.tar
+*.tmp
+*.bak
+
+# Ignore system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+{
+  "species": [
+    "Pepper_bell",
+    "PlantVillage",
+    "Potato",
+    "Tomato",
+    "train",
+    "val"
+  ],
+  "issues": [
+    "Bacterial_spot",
+    "Early_blight",
+    "Late_blight",
+    "Leaf_Mold",
+    "Septoria_leaf_spot",
+    "Spider_mites_Two_spotted_spider_mite",
+    "Target_Spot",
+    "Tomato_YellowLeaf_Curl_Virus",
+    "Tomato_mosaic_virus"
+  ]
+}

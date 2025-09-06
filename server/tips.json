@@ -1,0 +1,14 @@
+{
+"en": {
+"species_000": [
+{ "title": "Watering", "text": "Water at soil level; avoid wetting leaves to reduce fungal spread." },
+{ "title": "Airflow", "text": "Improve airflow around the plant to reduce humidity." }
+],
+"generic": [
+"Remove heavily infected leaves with clean shears.",
+"Avoid overhead irrigation; water early in the day.",
+"Rotate crops and sanitize tools."
+],
+"toxicity_flags": ["species_003","species_007"]
+}
+}
